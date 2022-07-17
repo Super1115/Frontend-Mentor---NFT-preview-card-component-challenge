@@ -17,7 +17,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### link
 - [Live URL](https://super1115.github.io/QR-code-component-challenge-on-Frontend-Mentor/)
-- [Solution URL](https://github.com/Super1115/QR-code-component-challenge-on-Frontend-Mentor)
+- [Solution URL](https://github.com/Super1115/Frontend-Mentor---NFT-preview-card-component-challenge)
 
 ### Author
 
