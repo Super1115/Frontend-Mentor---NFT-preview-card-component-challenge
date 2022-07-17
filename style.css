@@ -1,0 +1,110 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font */
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --card-width:20.625em;
+    --card-hight:34.375em;
+    --card-padding:1.4375em;
+
+}
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.df{
+    display: flex;
+}
+.aic{
+    align-items: center;
+}
+.jcc{
+    justify-content: center;
+}
+body{
+    background: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    padding: var(--card-padding);
+    width: var(--card-width);
+    height: var(--card-hight);
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 30px;
+}
+.card *{
+    font-family: 'Outfit', sans-serif;
+}
+.card > .img_frame{
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    width: calc(var(--card-width)  - var(--card-padding) - var(--card-padding));
+    height: calc(var(--card-width) - var(--card-padding) - var(--card-padding));
+}
+.card > .img_frame > img{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+.card > .info{
+    position: relative;
+    width: calc(var(--card-width)  - var(--card-padding) - var(--card-padding));
+    height: min-content;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+.card > .info > h1{
+    width: 100%;
+    margin: 0.825em 0;
+    font-size: 1.5em;
+    color: var(--White);
+    
+}
+.card > .info > .description{
+    width: 100%;
+    margin: 0.825em 0;
+    font-size: 18px;
+    color: var(--White)
+}
+.card > .info > .detail{
+    justify-content: space-between;
+}
+.card > .info > .detail .icon_frame{
+    margin-right: 8px;
+}
+.card > .info > .detail > .time{
+    color: var(--Soft-blue);
+}
+.card > .info > .detail > .price{
+    color: var(--Cyan)
+}
+.card > .creator{
+    width: calc(var(--card-width)  - var(--card-padding) - var(--card-padding));
+    position: relative;
+    height: 2.875em;
+}
+.card > .creator > .creator_frame{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.card > .creator > .creator_frame > img{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+.card > .creator > p{
+   color: hsl(216, 45%, 18%);
+}
+.card > .creator > span{
+    color: hsl(216, 45%, 18%);
+ }
